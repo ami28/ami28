@@ -2,17 +2,33 @@
 
 
 @font-face {
-	font-family: 'proxima';
-	src: url('../font/proxima.woff2') format('woff2'), url('../font/proxima.woff') format('woff');
+	font-family: 'Nunito';
+	src:('https://fonts.googleapis.com/css?family=Nunito');
 	font-weight: normal;
 	font-style: normal;
 }
+
+.container{
+	padding: 100px 50px;
+	color: #A1B2B3;
+}
+
+..rectangle-3 {
+	width: 1440px;
+	height: 15px;
+	background-image: linear-gradient(to right, #02aed5, #6024b8 31%, #f2209a 54%, #ff8e00 75%, #ff8e00 89%, #fffc7b) no-repeat;
+}
+.name{
+	font-size: 48px;
+	font-weight: normal;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
 	background: url('img/bg-line.png') no-repeat #000;
-	color: #FFFFFF;
-	font: 200 48px/1.5em 'proxima', sans-serif;
+	color: #A1B2B3;
+	font: 200 26px/1.5em 'Nunito', sans-serif;
 }
 a, a:link, a:visited {
 	text-decoration: none;
@@ -43,23 +59,25 @@ a:hover, a:active {
 }
 .hi, a.hi:link, a.hi:visited, a.hi:hover, a.hi:active {
 	color: #FFFFFF;
-	background-image: linear-gradient(-270deg, #FF42DD 0%, #FF0037 100%);
-	font: 200 48px/1.5em 'proxima', sans-serif;
-	padding: 5px 20px;
-	margin: 0px;
-	border-radius: 0px;
-}
-.robin, a.robin:link, a.robin:visited {
-	color: #FFFFFF;
-	background: #25DBDA;
+	background-image: linear-gradient(-270deg, #f09433 0%, #e6683c 25%, #cc2366 75%, #bc1888 100%);
 	-webkit-transition: background 500ms ease-in;
 	-moz-transition: background 500ms ease-in;
 	-o-transition: background 500ms ease-in;
 	-ms-transition: background 500ms ease-in;
 	transition: background 500ms ease-in;
 }
-a.robin:hover, a.robin:active {
+.robin, a.robin:link, a.robin:visited {
 	color: #FFFFFF;
+	background: #ea4c89;
+	-webkit-transition: background 500ms ease-in;
+	-moz-transition: background 500ms ease-in;
+	-o-transition: background 500ms ease-in;
+	-ms-transition: background 500ms ease-in;
+	transition: background 500ms ease-in;
+}
+
+a.robin:hover, a.robin:active {
+	color: #A1B2B3;
 	background: none;
 	-webkit-transition: background 500ms ease-out;
 	-moz-transition: background 500ms ease-out;
@@ -67,6 +85,18 @@ a.robin:hover, a.robin:active {
 	-ms-transition: background 500ms ease-out;
 	transition: background 500ms ease-out;
 }
+
+a.hi:hover, a.hi:active {
+	color: #A1B2B3;
+	background: none;
+	-webkit-transition: background 500ms ease-out;
+	-moz-transition: background 500ms ease-out;
+	-o-transition: background 500ms ease-out;
+	-ms-transition: background 500ms ease-out;
+	transition: background 500ms ease-out;
+
+}
+
 .downy, a.downy:link, a.downy:visited {
 	color: #FFFFFF;
 	background: #63DFBB;
@@ -105,7 +135,7 @@ a.feijoa:hover, a.feijoa:active {
 }
 .crimson, a.crimson:link, a.crimson:visited {
 	color: #FFFFFF;
-	background: #FA958D;
+	background: #017CFF;
 	-webkit-transition: background 500ms ease-in;
 	-moz-transition: background 500ms ease-in;
 	-o-transition: background 500ms ease-in;
@@ -159,7 +189,7 @@ a.wattle:hover, a.wattle:active {
 }
 .lavender, a.lavender:link, a.lavender:visited {
 	color: #FFFFFF;
-	background: #D596FF;
+	background: #0077B5;
 	-webkit-transition: background 500ms ease-in;
 	-moz-transition: background 500ms ease-in;
 	-o-transition: background 500ms ease-in;
@@ -188,7 +218,7 @@ article {
 	padding: 25px;
 	width: 500px;
 	color: #FFFFFF;
-	font: 200 48px/1.5em 'proxima', sans-serif;
+	font: 200 48px/1.5em 'Nunito', sans-serif;
 }
 @media screen and (max-width: 700px) {
 article {
@@ -196,12 +226,12 @@ article {
 	padding: 25px;
 	width: auto;
 	color: #FFFFFF;
-	font: 200 48px/1.5em 'proxima', sans-serif;
+	font: 200 48px/1.5em 'Nunito', sans-serif;
 }
 }
 ::selection {
 	background: rgba(255, 216, 0, 0.99);
-	color: #FFFFFF;
+	color: #000;
 }
 ::-moz-selection {
 	background: rgba(255, 216, 0, 0.99);
@@ -211,11 +241,19 @@ article {
 
 
 .wrapper {
-	width: 960px;
+	width: 700px;
 	margin: 0 auto;
 }
 
+.footer-text {
+	font-size: 18px;
+	font-weight: lighter;
+}
 
-.footer-icons {
+.footer {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
 
 }
