@@ -1,35 +1,57 @@
-
-
+body {
+	margin:0px;
+	background-color:#161e27;
+	color: #FFFFFF;
+	font: 200 24px/1.5em 'Nunito', sans-serif;
+}
 
 @font-face {
 	font-family: 'Nunito';
 	src:('https://fonts.googleapis.com/css?family=Nunito');
 	font-weight: normal;
 	font-style: normal;
+
 }
 
-.container{
-	padding: 100px 50px;
-	color: #A1B2B3;
-}
-
-..rectangle-3 {
-	width: 1440px;
+.rectangle {
+	width: 100%;
 	height: 15px;
-	background-image: linear-gradient(to right, #02aed5, #6024b8 31%, #f2209a 54%, #ff8e00 75%, #ff8e00 89%, #fffc7b) no-repeat;
-}
-.name{
-	font-size: 48px;
-	font-weight: normal;
+	background-image: linear-gradient(to right, #02aed5, #6024b8 31%, #f2209a 54%, #ff8e00 75%, #ff8e00 89%, #fffc7b);
 }
 
-body {
-	margin: 0px;
-	padding: 0px;
-	background: url('img/bg-line.png') no-repeat #000;
-	color: #A1B2B3;
-	font: 200 26px/1.5em 'Nunito', sans-serif;
+.content{
+	width: 100%;
 }
+
+.title {
+	font-weight:normal;
+	font-size:42px;
+	color: #FFFFFF;
+	width: 100%;
+ 	margin: 0 auto;
+}
+
+
+article {
+	margin: 50px auto;
+	max-width: 600px;
+	color: #FFFFFF;
+	font: 200 26px/1.5em 'Nunito', sans-serif;
+	padding: 25px;
+}
+
+
+::selection {
+	background: rgba(255, 216, 0, 0.99);
+	color: #000;
+}
+
+.footer-text {
+	font-size: 22px;
+	font-weight: lighter;
+	line-height:45px;
+}
+
 a, a:link, a:visited {
 	text-decoration: none;
 	outline: none;
@@ -53,20 +75,8 @@ a:hover, a:active {
 	-ms-transition: background 500ms ease-in;
 	transition: background 500ms ease-in;
 }
-.age {
-	color: #FFFFFF;
-	font: 48px 'codystar', sans-serif;
-}
-.hi, a.hi:link, a.hi:visited, a.hi:hover, a.hi:active {
-	color: #FFFFFF;
-	background-image: linear-gradient(-270deg, #f09433 0%, #e6683c 25%, #cc2366 75%, #bc1888 100%);
-	-webkit-transition: background 500ms ease-in;
-	-moz-transition: background 500ms ease-in;
-	-o-transition: background 500ms ease-in;
-	-ms-transition: background 500ms ease-in;
-	transition: background 500ms ease-in;
-}
-.robin, a.robin:link, a.robin:visited {
+
+.dribbble, a.dribbble:link, a.dribbble:visited {
 	color: #FFFFFF;
 	background: #ea4c89;
 	-webkit-transition: background 500ms ease-in;
@@ -76,8 +86,8 @@ a:hover, a:active {
 	transition: background 500ms ease-in;
 }
 
-a.robin:hover, a.robin:active {
-	color: #A1B2B3;
+a.dribbble:hover, a.dribbble:active {
+	color: #FFFFFF;
 	background: none;
 	-webkit-transition: background 500ms ease-out;
 	-moz-transition: background 500ms ease-out;
@@ -86,108 +96,7 @@ a.robin:hover, a.robin:active {
 	transition: background 500ms ease-out;
 }
 
-a.hi:hover, a.hi:active {
-	color: #A1B2B3;
-	background: none;
-	-webkit-transition: background 500ms ease-out;
-	-moz-transition: background 500ms ease-out;
-	-o-transition: background 500ms ease-out;
-	-ms-transition: background 500ms ease-out;
-	transition: background 500ms ease-out;
-
-}
-
-.downy, a.downy:link, a.downy:visited {
-	color: #FFFFFF;
-	background: #63DFBB;
-	-webkit-transition: background 500ms ease-in;
-	-moz-transition: background 500ms ease-in;
-	-o-transition: background 500ms ease-in;
-	-ms-transition: background 500ms ease-in;
-	transition: background 500ms ease-in;
-}
-a.downy:hover, a.downy:active {
-	color: #FFFFFF;
-	background: none;
-	-webkit-transition: background 500ms ease-out;
-	-moz-transition: background 500ms ease-out;
-	-o-transition: background 500ms ease-out;
-	-ms-transition: background 500ms ease-out;
-	transition: background 500ms ease-out;
-}
-.feijoa, a.feijoa:link, a.feijoa:visited {
-	color: #FFFFFF;
-	background: #ACE37F;
-	-webkit-transition: background 500ms ease-in;
-	-moz-transition: background 500ms ease-in;
-	-o-transition: background 500ms ease-in;
-	-ms-transition: background 500ms ease-in;
-	transition: background 500ms ease-in;
-}
-a.feijoa:hover, a.feijoa:active {
-	color: #FFFFFF;
-	background: none;
-	-webkit-transition: background 500ms ease-out;
-	-moz-transition: background 500ms ease-out;
-	-o-transition: background 500ms ease-out;
-	-ms-transition: background 500ms ease-out;
-	transition: background 500ms ease-out;
-}
-.crimson, a.crimson:link, a.crimson:visited {
-	color: #FFFFFF;
-	background: #017CFF;
-	-webkit-transition: background 500ms ease-in;
-	-moz-transition: background 500ms ease-in;
-	-o-transition: background 500ms ease-in;
-	-ms-transition: background 500ms ease-in;
-	transition: background 500ms ease-in;
-}
-a.crimson:hover, a.crimson:active {
-	color: #FFFFFF;
-	background: none;
-	-webkit-transition: background 500ms ease-out;
-	-moz-transition: background 500ms ease-out;
-	-o-transition: background 500ms ease-out;
-	-ms-transition: background 500ms ease-out;
-	transition: background 500ms ease-out;
-}
-.rose, a.rose:link, a.rose:visited {
-	color: #FFFFFF;
-	background: #FD81CA;
-	-webkit-transition: background 500ms ease-in;
-	-moz-transition: background 500ms ease-in;
-	-o-transition: background 500ms ease-in;
-	-ms-transition: background 500ms ease-in;
-	transition: background 500ms ease-in;
-}
-a.rose:hover, a.rose:active {
-	color: #FFFFFF;
-	background: none;
-	-webkit-transition: background 500ms ease-out;
-	-moz-transition: background 500ms ease-out;
-	-o-transition: background 500ms ease-out;
-	-ms-transition: background 500ms ease-out;
-	transition: background 500ms ease-out;
-}
-.wattle, a.wattle:link, a.wattle:visited {
-	color: #FFFFFF;
-	background: #E0C437;
-	-webkit-transition: background 500ms ease-in;
-	-moz-transition: background 500ms ease-in;
-	-o-transition: background 500ms ease-in;
-	-ms-transition: background 500ms ease-in;
-	transition: background 500ms ease-in;
-}
-a.wattle:hover, a.wattle:active {
-	color: #FFFFFF;
-	background: none;
-	-webkit-transition: background 500ms ease-out;
-	-moz-transition: background 500ms ease-out;
-	-o-transition: background 500ms ease-out;
-	-ms-transition: background 500ms ease-out;
-	transition: background 500ms ease-out;
-}
-.lavender, a.lavender:link, a.lavender:visited {
+.linkedin, a.linkedin:link, a.linkedin:visited {
 	color: #FFFFFF;
 	background: #0077B5;
 	-webkit-transition: background 500ms ease-in;
@@ -196,7 +105,7 @@ a.wattle:hover, a.wattle:active {
 	-ms-transition: background 500ms ease-in;
 	transition: background 500ms ease-in;
 }
-a.lavender:hover, a.lavender:active {
+a.linkedin:hover, a.linkedin:active {
 	color: #FFFFFF;
 	background: none;
 	-webkit-transition: background 500ms ease-out;
@@ -205,49 +114,63 @@ a.lavender:hover, a.lavender:active {
 	-ms-transition: background 500ms ease-out;
 	transition: background 500ms ease-out;
 }
-img {
-	max-width: 100%;
-	height: auto;
-	border: 0px;
-}
-li, ul {
-	list-style: disc;
-}
-article {
-	margin: 25px auto;
-	padding: 25px;
-	width: 500px;
+
+.hi, a.hi:link, a.hi:visited, a.hi:hover, a.hi:active {
 	color: #FFFFFF;
-	font: 200 48px/1.5em 'Nunito', sans-serif;
+	background-image: linear-gradient(-270deg, #f09433 0%, #e6683c 25%, #cc2366 75%, #bc1888 100%);
+	-webkit-transition: background 500ms ease-in;
+	-moz-transition: background 500ms ease-in;
+	-o-transition: background 500ms ease-in;
+	-ms-transition: background 500ms ease-in;
+	transition: background 500ms ease-in;
 }
-@media screen and (max-width: 700px) {
-article {
-	margin: 25px auto;
-	padding: 25px;
-	width: auto;
+a.hi:hover, a.hi:active {
 	color: #FFFFFF;
-	font: 200 48px/1.5em 'Nunito', sans-serif;
+	background: none;
+	-webkit-transition: background 500ms ease-out;
+	-moz-transition: background 500ms ease-out;
+	-o-transition: background 500ms ease-out;
+	-ms-transition: background 500ms ease-out;
+	transition: background 500ms ease-out;
+
 }
-}
-::selection {
-	background: rgba(255, 216, 0, 0.99);
-	color: #000;
-}
-::-moz-selection {
-	background: rgba(255, 216, 0, 0.99);
+
+.behance, a.behance:link, a.behance:visited {
 	color: #FFFFFF;
+	background: #017CFF;
+	-webkit-transition: background 500ms ease-in;
+	-moz-transition: background 500ms ease-in;
+	-o-transition: background 500ms ease-in;
+	-ms-transition: background 500ms ease-in;
+	transition: background 500ms ease-in;
+}
+a.behance:hover, a.behance:active {
+	color: #FFFFFF;
+	background: none;
+	-webkit-transition: background 500ms ease-out;
+	-moz-transition: background 500ms ease-out;
+	-o-transition: background 500ms ease-out;
+	-ms-transition: background 500ms ease-out;
+	transition: background 500ms ease-out;
 }
 
-
-
-.wrapper {
-	width: 700px;
-	margin: 0 auto;
+.email, a.email:link, a.email:visited {
+	color: #FFFFFF;
+	background: #ff8e00;
+	-webkit-transition: background 500ms ease-in;
+	-moz-transition: background 500ms ease-in;
+	-o-transition: background 500ms ease-in;
+	-ms-transition: background 500ms ease-in;
+	transition: background 500ms ease-in;
 }
-
-.footer-text {
-	font-size: 18px;
-	font-weight: lighter;
+a.email:hover, a.email:active {
+	color: #FFFFFF;
+	background: none;
+	-webkit-transition: background 500ms ease-out;
+	-moz-transition: background 500ms ease-out;
+	-o-transition: background 500ms ease-out;
+	-ms-transition: background 500ms ease-out;
+	transition: background 500ms ease-out;
 }
 
 .footer {
