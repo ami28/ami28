@@ -1,8 +1,7 @@
 body {
 	margin:0px;
 	background-color:#161e27;
-	color: #FFFFFF;
-	font: 200 22px/1.5em 'Nunito', sans-serif;
+
 }
 
 @font-face {
@@ -36,7 +35,7 @@ article {
 	margin: 50px auto;
 	max-width: 600px;
 	color: #FFFFFF;
-	font: 200 26px/1.5em 'Nunito', sans-serif;
+	font: 200 24px/1.5em 'Nunito', sans-serif;
 	padding: 25px;
 }
 
