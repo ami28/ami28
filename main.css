@@ -1,13 +1,12 @@
 body {
 	margin:0px;
 	background-color:#161e27;
-
 }
 
 @font-face {
 	font-family: 'Nunito';
 	src:('https://fonts.googleapis.com/css?family=Nunito');
-	font-weight: normal;
+	font-weight: lighter;
 	font-style: normal;
 
 }
@@ -22,14 +21,6 @@ body {
 	width: 100%;
 }
 
-.title {
-	font-weight:normal;
-	font-size:42px;
-	color: #FFFFFF;
-	width: 100%;
- 	margin: 0 auto;
-}
-
 
 article {
 	margin: 50px auto;
@@ -39,16 +30,32 @@ article {
 	padding: 25px;
 }
 
+.title {
+	font-weight:normal;
+	font-size:42px;
+	color: #FFFFFF;
+	width: 100%;
+ 	margin: 0 auto;
+}
 
-::selection {
-	background: rgba(255, 216, 0, 0.99);
-	color: #000;
+
+.mylist {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+
 }
 
 .footer-text {
 	font-size: 22px;
 	font-weight: lighter;
 	line-height:45px;
+}
+
+::selection {
+	background: rgba(255, 216, 0, 0.99);
+	color: #171F28;
 }
 
 a, a:link, a:visited {
@@ -155,7 +162,7 @@ a.behance:hover, a.behance:active {
 
 .email, a.email:link, a.email:visited {
 	color: #FFFFFF;
-	background: #ff8e00;
+	background: #FFB026;
 	-webkit-transition: background 500ms ease-in;
 	-moz-transition: background 500ms ease-in;
 	-o-transition: background 500ms ease-in;
@@ -172,10 +179,4 @@ a.email:hover, a.email:active {
 	transition: background 500ms ease-out;
 }
 
-.footer {
-	list-style-type: none;
-	padding: 0px;
-	margin: 0px;
-	list-style: none;
 
-}
