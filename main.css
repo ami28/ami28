@@ -1,58 +1,21 @@
-body {
-	margin:0px;
-	background-color:#161e27;
-}
-
-.rectangle {
-	width: 100%;
-	height: 15px;
-	background-image: linear-gradient(to right, #02aed5, #6024b8 31%, #f2209a 54%, #ff8e00 75%, #ff8e00 89%, #fffc7b);
-}
-
-.content{
-	width: 100%;
-}
-
-
-article {
-	margin: 50px auto;
-	max-width: 600px;
-	color: #FFFFFF;
-	font: 200 24px/1.5em 'Nunito', sans-serif;
-	padding: 25px;
+@font-face {
+	font-family: 'nunito';
 	font-weight: lighter;
 	font-style: normal;
 }
-
-@media screen and (max-width: 700px) {
-	article {
-		margin: 25px auto;
-		padding: 25px;
-		width: auto;
-		color: #FFFFFF;
-		font: 200 48px/1.5em 'Nunito', sans-serif;
-		font-weight: lighter;
-	}
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #F5F5F5;
+	color: #999;
+	font: 200 48px/1.5em 'nunito', sans-serif;
 }
 
-.title {
-	font-weight:normal;
-	font-size:42px;
-	color: #FFFFFF;
-	width: 100%;
- 	margin: 0 auto;
+.box {
+	width:132px;
+	height:8px;
+	background-image: linear-gradient(to right, #d1a9ec, #26dbda 25%, #62dfbb 37%, #ace37f 56%, #ffc784 80%, #fd81ca);
 }
-
-@media screen and (max-width: 700px) {
-	.title {
-		width: auto;
-		color: #FFFFFF;
-		font: 200 48px/1.5em 'Nunito', sans-serif;
-		line-height:100px;
-		font-weight:normal;
-	}
-}
-
 
 .mylist {
 	list-style-type: none;
@@ -62,25 +25,20 @@ article {
 
 }
 
+@media screen and (max-width: 700px) {
+.box {
+	width:175px;
+}
+}
+
 .footer-text {
-	font-size: 22px;
-	font-weight: lighter;
-	line-height:45px;
+	line-height:60px;
 }
 
 @media screen and (max-width: 700px) {
-	.footer-text {
-		width: auto;
-		color: #FFFFFF;
-		font: 200 48px/1.5em 'Nunito', sans-serif;
-		line-height:100px;
-		font-weight: lighter;
-	}
+.footer-text {
+	line-height:80px;
 }
-
-::selection {
-	background: rgba(255, 216, 0, 0.99);
-	color: #171F28;
 }
 
 a, a:link, a:visited {
@@ -98,7 +56,7 @@ a, a:link, a:visited {
 a:hover, a:active {
 	text-decoration: none;
 	outline: none;
-	color: #FFFFFF;
+	color: #A1B2B3;
 	background: none;
 	-webkit-transition: background 500ms ease-in;
 	-moz-transition: background 500ms ease-in;
@@ -107,18 +65,18 @@ a:hover, a:active {
 	transition: background 500ms ease-in;
 }
 
-.dribbble, a.dribbble:link, a.dribbble:visited {
+}
+.robin, a.robin:link, a.robin:visited {
 	color: #FFFFFF;
-	background: #ea4c89;
+	background: #00DCEC;
 	-webkit-transition: background 500ms ease-in;
 	-moz-transition: background 500ms ease-in;
 	-o-transition: background 500ms ease-in;
 	-ms-transition: background 500ms ease-in;
 	transition: background 500ms ease-in;
 }
-
-a.dribbble:hover, a.dribbble:active {
-	color: #FFFFFF;
+a.robin:hover, a.robin:active {
+	color: #A1B2B3;
 	background: none;
 	-webkit-transition: background 500ms ease-out;
 	-moz-transition: background 500ms ease-out;
@@ -126,10 +84,9 @@ a.dribbble:hover, a.dribbble:active {
 	-ms-transition: background 500ms ease-out;
 	transition: background 500ms ease-out;
 }
-
 .linkedin, a.linkedin:link, a.linkedin:visited {
 	color: #FFFFFF;
-	background: #0077B5;
+	background: #29BAFF;
 	-webkit-transition: background 500ms ease-in;
 	-moz-transition: background 500ms ease-in;
 	-o-transition: background 500ms ease-in;
@@ -137,7 +94,7 @@ a.dribbble:hover, a.dribbble:active {
 	transition: background 500ms ease-in;
 }
 a.linkedin:hover, a.linkedin:active {
-	color: #FFFFFF;
+	color: #29BAFF;
 	background: none;
 	-webkit-transition: background 500ms ease-out;
 	-moz-transition: background 500ms ease-out;
@@ -145,38 +102,36 @@ a.linkedin:hover, a.linkedin:active {
 	-ms-transition: background 500ms ease-out;
 	transition: background 500ms ease-out;
 }
-
-.hi, a.hi:link, a.hi:visited, a.hi:hover, a.hi:active {
+.instagram, a.instagram:link, a.instagram:visited {
 	color: #FFFFFF;
-	background-image: linear-gradient(-270deg, #f09433 0%, #e6683c 25%, #cc2366 75%, #bc1888 100%);
+	background: #FF9583;
 	-webkit-transition: background 500ms ease-in;
 	-moz-transition: background 500ms ease-in;
 	-o-transition: background 500ms ease-in;
 	-ms-transition: background 500ms ease-in;
 	transition: background 500ms ease-in;
 }
-a.hi:hover, a.hi:active {
-	color: #FFFFFF;
+a.instagram:hover, a.instagram:active {
+	color: #FF9583;
 	background: none;
 	-webkit-transition: background 500ms ease-out;
 	-moz-transition: background 500ms ease-out;
 	-o-transition: background 500ms ease-out;
 	-ms-transition: background 500ms ease-out;
 	transition: background 500ms ease-out;
-
 }
 
-.behance, a.behance:link, a.behance:visited {
+.dribbble, a.dribbble:link, a.dribbble:visited {
 	color: #FFFFFF;
-	background: #017CFF;
+	background: #FD81CA;
 	-webkit-transition: background 500ms ease-in;
 	-moz-transition: background 500ms ease-in;
 	-o-transition: background 500ms ease-in;
 	-ms-transition: background 500ms ease-in;
 	transition: background 500ms ease-in;
 }
-a.behance:hover, a.behance:active {
-	color: #FFFFFF;
+a.dribbble:hover, a.dribbble:active {
+	color: #FD81CA;
 	background: none;
 	-webkit-transition: background 500ms ease-out;
 	-moz-transition: background 500ms ease-out;
@@ -185,17 +140,17 @@ a.behance:hover, a.behance:active {
 	transition: background 500ms ease-out;
 }
 
-.email, a.email:link, a.email:visited {
+.lavender, a.lavender:link, a.lavender:visited {
 	color: #FFFFFF;
-	background: #FFB026;
+	background: #D596FF;
 	-webkit-transition: background 500ms ease-in;
 	-moz-transition: background 500ms ease-in;
 	-o-transition: background 500ms ease-in;
 	-ms-transition: background 500ms ease-in;
 	transition: background 500ms ease-in;
 }
-a.email:hover, a.email:active {
-	color: #FFFFFF;
+a.lavender:hover, a.lavender:active {
+	color: #A1B2B3;
 	background: none;
 	-webkit-transition: background 500ms ease-out;
 	-moz-transition: background 500ms ease-out;
@@ -203,6 +158,35 @@ a.email:hover, a.email:active {
 	-ms-transition: background 500ms ease-out;
 	transition: background 500ms ease-out;
 }
-
-
-
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0px;
+}
+li, ul {
+	list-style: disc;
+}
+article {
+	margin: 25px auto;
+	padding: 25px;
+	width: 500px;
+	color: #777;
+	font: 200 32px/1.5em 'nunito', sans-serif;
+}
+@media screen and (max-width: 700px) {
+article {
+	margin: 25px auto;
+	padding: 25px;
+	width: auto;
+	color: #777;
+	font: 200 40px/1.5em 'nunito', sans-serif;
+}
+}
+::selection {
+	background: #FFE87B;
+	color: #777;
+}
+::-moz-selection {
+	background: #FFE87B;
+	color: #777;
+}
