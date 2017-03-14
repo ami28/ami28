@@ -27,7 +27,7 @@ body {
 
 @media screen and (max-width: 700px) {
 .box {
-	width:175px;
+	width:160px;
 }
 }
 
@@ -56,7 +56,7 @@ a, a:link, a:visited {
 a:hover, a:active {
 	text-decoration: none;
 	outline: none;
-	color: #A1B2B3;
+	color: #777777;
 	background: none;
 	-webkit-transition: background 500ms ease-in;
 	-moz-transition: background 500ms ease-in;
@@ -76,7 +76,7 @@ a:hover, a:active {
 	transition: background 500ms ease-in;
 }
 a.robin:hover, a.robin:active {
-	color: #A1B2B3;
+	color: #00DCEC;
 	background: none;
 	-webkit-transition: background 500ms ease-out;
 	-moz-transition: background 500ms ease-out;
@@ -150,7 +150,7 @@ a.dribbble:hover, a.dribbble:active {
 	transition: background 500ms ease-in;
 }
 a.lavender:hover, a.lavender:active {
-	color: #A1B2B3;
+	color: #D596FF;
 	background: none;
 	-webkit-transition: background 500ms ease-out;
 	-moz-transition: background 500ms ease-out;
@@ -169,7 +169,7 @@ li, ul {
 article {
 	margin: 25px auto;
 	padding: 25px;
-	width: 500px;
+	width: 650px;
 	color: #777;
 	font: 200 32px/1.5em 'nunito', sans-serif;
 }
@@ -179,7 +179,7 @@ article {
 	padding: 25px;
 	width: auto;
 	color: #777;
-	font: 200 40px/1.5em 'nunito', sans-serif;
+	font: 200 36px/1.5em 'nunito', sans-serif;
 }
 }
 ::selection {
