@@ -28,6 +28,18 @@ article {
 	color: #FFFFFF;
 	font: 200 24px/1.5em 'Nunito', sans-serif;
 	padding: 25px;
+	font-weight: lighter;
+}
+
+@media screen and (max-width: 700px) {
+article {
+	margin: 25px auto;
+	padding: 25px;
+	width: auto;
+	color: #FFFFFF;
+	font: 200 48px/1.5em 'Nunito', sans-serif;
+	font-weight: lighter;
+}
 }
 
 .title {
@@ -36,6 +48,16 @@ article {
 	color: #FFFFFF;
 	width: 100%;
  	margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+	.title {
+		width: auto;
+		color: #FFFFFF;
+		font: 200 48px/1.5em 'Nunito', sans-serif;
+		line-height:100px;
+		font-weight:bold;
+	}
 }
 
 
@@ -51,6 +73,15 @@ article {
 	font-size: 22px;
 	font-weight: lighter;
 	line-height:45px;
+}
+
+@media screen and (max-width: 700px) {
+	.footer-text {
+		width: auto;
+		color: #FFFFFF;
+		font: 200 48px/1.5em 'Nunito', sans-serif;
+		line-height:100px;
+	}
 }
 
 ::selection {
@@ -178,5 +209,6 @@ a.email:hover, a.email:active {
 	-ms-transition: background 500ms ease-out;
 	transition: background 500ms ease-out;
 }
+
 
 
